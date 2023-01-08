@@ -36,7 +36,7 @@ create TABLE IF NOT EXISTS Songs (
 	Album_id INTEGER REFERENCES Album(id)
 );
 
-create TABLE IF NOT EXISTS Collection (
+create TABLE IF NOT EXISTS  Collection (
 	id SERIAL PRIMARY KEY,
 	name VARCHAR(40) unique not NULL,
 	year_of INTEGER check(year_of>1900),
